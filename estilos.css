@@ -14,32 +14,34 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #202020;
+    box-sizing: border-box;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /*comienza el header*/
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     gap: 30px;
-}
-
-nav li {
-    display: inline-block;
+    margin-top: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #5DD62C;
-    font-family: "montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
     display: block;
     padding: 10px 10px;
     border: 2px;
     border-radius: 20px;
-    transition: all 0,3s ease;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -51,7 +53,6 @@ nav a:hover {
 /*comienza el main*/
 h2 {
     font-family: "Montserrat", sans-serif;
-    font-style: medium;
     font-weight: 500;
     font-size: 32px;
     color: #DF2451;
@@ -59,7 +60,7 @@ h2 {
 
 h1 {
     font-family: "Tieldsa";
-    font-size: 350px;
+    font-size: 300px;
     color: #5DD62C;
     margin: 0;
 
@@ -78,7 +79,7 @@ h1 {
     font-family: "Mansalva", sans-serif;
     font-size:300px;
     color: #DF2451;
-    margin-top: -19vw;
+    margin-top: -300px;
     margin-bottom: 0;
 }
 
@@ -101,6 +102,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 132px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 66px;
 }
 
