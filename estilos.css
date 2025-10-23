@@ -15,6 +15,7 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #202020;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
     padding: 0;
 }
 
-/*comienza el header*/
+/*comienza el header y lo mismo para los demas html*/
 nav ul {
     list-style: none;
     display: flex;
@@ -50,6 +51,8 @@ nav a:hover {
     box-shadow: 0 0 10px #5DD62C;
 }
 
+
+/*index*/
 /*comienza el main*/
 h2 {
     font-family: "Montserrat", sans-serif;
@@ -88,7 +91,7 @@ h1 {
     justify-content: center;
     margin-top: -125px;
 }
-/*aca empieza el footer*/
+/*aca empieza el footer y para demas html*/
 p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -108,3 +111,4 @@ footer {
     margin-top: 66px;
 }
 
+/*sobre mi*/
