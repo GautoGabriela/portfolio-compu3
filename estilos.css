@@ -128,10 +128,13 @@ footer {
 .portada-texto {
     position: absolute;
     right: 5vw;
-    bottom: 4vw;
+    bottom: 10.8vw;
     text-align: right;
     z-index: 2; 
     width: auto;
+
+    /*animación general*/
+    animation: aparecerDesdeAbajo 1.4s ease-out both;
 }
 
 .titulo-tuqui {
@@ -146,6 +149,11 @@ footer {
     line-height: 0.8;
     position: relative;
     z-index: 2;
+
+/*su animación*/
+    opacity: 0;
+    animation: aparecerDesdeAbajo 1.2s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
 .subtitulo-tuqui {
@@ -158,4 +166,22 @@ footer {
     margin: 0;
     padding: 0;
     z-index: 3;
+
+/*su animación*/
+    opacity: 0;
+    animation: aparecerDesdeAbajo 1.2s ease-out forwards;
+    animation-delay: 0.6s;
 }
+
+/*animación de arriba*/
+@keyframes aparecerDesdeAbajo {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
