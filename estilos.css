@@ -185,3 +185,95 @@ footer {
     }
 }
 
+/*sobre mi, esto es la sección que está debajo de mi imagen como portada*/
+.barra-rosa {
+    background-color: #DF2451;
+    height: 100px;
+    width: 100%;
+}
+
+.contenido-sobre-mi {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 90px;
+    margin-top: 80px;
+}
+
+.texto-sobre-mi {
+    width: 45%;
+}
+
+h3 {
+    color: #5DD62C;
+    font-family: "Tieldsa";
+    font-weight: normal;
+    font-size: 100px;
+    margin-bottom: -20px;
+}
+
+.texto-sobre-mi p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.texto-sobre-mi h4 {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.mi-imagen img {
+    width: 820px;
+    height: auto;
+}
+
+/*cuadros de información*/
+.cuadros-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 90px;
+}
+
+.cuadro {
+    width: 48%;
+    margin-top: 40px;
+    box-sizing: border-box;
+    border: 2px solid #DF2451;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+h4 {
+    color: #5DD62C;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.iconos {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+/*animaciones para los iconos de adobe*/
+.iconos img {
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.iconos img:hover {
+    transform: scale(1.1);
+}
