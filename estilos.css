@@ -66,6 +66,7 @@ h2 {
 h1 {
     font-family: "Tieldsa";
     font-size: 300px;
+    font-weight: normal;
     color: #5DD62C;
     margin: 0;
 
@@ -277,3 +278,24 @@ p {
 .iconos img:hover {
     transform: scale(1.1);
 }
+
+/*aca comienza la pestaña de "trabajos"*/
+
+.portada-texto2 {
+    position: absolute;
+    left: 5vw;
+    bottom: 10.8vw;
+    text-align: left;
+    z-index: 2; 
+    width: auto;
+
+    /*animación general*/
+    animation: aparecerDesdeAbajo 1.4s ease-out both;
+}
+
+.barra-verde {
+    background-color: #5DD62C;
+    height: 100px;
+    width: 100%;
+}
+
