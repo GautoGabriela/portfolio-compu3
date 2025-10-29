@@ -544,15 +544,3 @@ form textarea {
 #boton_enviar:hover {
     transform: scale(1.05);
 }
-
-@media (max-width: 1366px) {
-  .vector {
-    width: 440px;
-    top: 0px;
-    right: 0; 
-    opacity: 0.9;
-  }
-  .fondo-verde {
-    position: relative;
-}
-}
