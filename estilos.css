@@ -278,7 +278,7 @@ h3 {
 h4 {
     color: #5DD62C;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 p {
@@ -354,7 +354,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 380px;
+    width: 384px;
     text-align: center;
 }
 
@@ -445,6 +445,7 @@ p {
 .fondo-verde {
     background-color: #5DD62C;
     padding: 40px 20px;
+    padding-bottom: 110px;
 }
 
 .texto-sobre-mi4 h3 {
@@ -453,4 +454,105 @@ p {
 .texto-sobre-mi4 p {
     color: #202020;
     width: 646px;
+    font-weight: 600;
+}
+
+.vector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    z-index: 1;
+}
+
+.fondo-verde {
+    position: relative;
+}
+
+.abajo .formulario {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 90px;
+    margin-right: 0;
+}
+
+.cajaextra {
+    background-color: #DF2451;
+    color: black;
+    padding: 25px 30px;
+    border-radius: 15px;
+    width: 335px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cajaextra p {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #202020;
+    font-weight: bold;
+}
+
+form {
+    background-color: #33741B;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+}
+
+/*campos de entrada*/
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    background-color: white;
+    font-size: 18px;
+    font-family: Montserrat;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    box-sizing: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*ajuste de textarea*/
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/*botón ENVIAR*/
+#boton_enviar {
+    background-color:#DF2451;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#boton_enviar:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1366px) {
+  .vector {
+    width: 440px;
+    top: 0px;
+    right: 0; 
+    opacity: 0.9;
+  }
+  .fondo-verde {
+    position: relative;
+}
 }
