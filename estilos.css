@@ -221,8 +221,50 @@ footer {
 /*sobre mi, esto es la sección que está debajo de mi imagen como portada*/
 .barra-rosa {
     background-color: #DF2451;
-    height: 100px;
+    height: 50px;
     width: 100%;
+}
+
+.slider-tags {
+	overflow: hidden;
+	position: relative;
+	height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-linea1 {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    animation: slide-left 90s linear infinite;
+}
+
+.tag {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	color: white;
+	margin-right: 12px;
+	height: fit-content;
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translate(-50%, -50%) translateX(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateX(-100%);
+  }
 }
 
 .contenido-sobre-mi {
@@ -328,7 +370,7 @@ p {
 
 .barra-verde {
     background-color: #5DD62C;
-    height: 100px;
+    height: 50px;
     width: 100%;
 }
 
@@ -599,7 +641,7 @@ video {
 
 .barra-verdeoscuro {
     background-color: #33741B;
-    height: 100px;
+    height: 50px;
     width: 100%;
 }
 
