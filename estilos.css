@@ -18,6 +18,10 @@ body {
     max-width: 100%;
     scrollbar-gutter: stable;
     cursor: url(img/cursor.png), auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 * {
