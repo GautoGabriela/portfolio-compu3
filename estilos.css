@@ -496,6 +496,57 @@ p {
 }
 
 
+.contenido-sobre-mi2 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+    margin-top: 30px;
+}
+
+.ficha_titulo_verde {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    background-color: #5DD62C;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 16px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    transition: all 0.5s ease-in-out;
+    white-space: nowrap;
+}
+.ficha:hover .ficha_titulo_verde {
+    color: black;
+    background: #5DD62C;
+    font-size: 14px;
+    transform: rotate(0deg);
+}
+
+.ficha_titulo_verdeoscuro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    background-color: #33741B;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 16px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    transition: all 0.5s ease-in-out;
+    white-space: nowrap;
+}
+.ficha:hover .ficha_titulo_verdeoscuro {
+    color: white;
+    background: #33741B;
+    font-size: 14px;
+    transform: rotate(0deg);
+}
+
 /*aca inicia la pestaña de contacto*/
 
 .portada-texto4 {
