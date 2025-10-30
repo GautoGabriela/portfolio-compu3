@@ -193,6 +193,8 @@ footer {
     margin: 0;
     padding: 0;
     z-index: 3;
+    text-shadow: 8px 2px 3px rgba(0, 0, 0, 0.3);
+    
 
 /*su animación*/
     opacity: 0;
@@ -421,6 +423,78 @@ p {
     line-height: 1.5;
 }
 
+/*aca inicia la pestaña de galeria*/
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.ficha {
+    flex: 1;
+    height: 400px;
+    position: relative;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.ficha img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.ficha_titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    background-color: #DF2451;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 16px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    transition: all 0.5s ease-in-out;
+    white-space: nowrap;
+}
+
+/*hover aplicado a la ficha*/
+
+.contenedor:hover .ficha {
+    flex: 0.8;
+    filter: grayscale(0%);
+    opacity: 0.7;
+}
+
+.contenedor .ficha:hover {
+    flex: 2;
+    opacity: 1;
+}
+
+.ficha:hover img {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+}
+
+.ficha:hover .ficha_titulo {
+    color: white;
+    background: #DF2451;
+    font-size: 14px;
+    transform: rotate(0deg);
+}
+
 
 /*aca inicia la pestaña de contacto*/
 
@@ -557,4 +631,16 @@ form textarea {
   .fondo-verde {
     position: relative;
 }
+}
+
+.portada-texto3 {
+    position: absolute;
+    right: 5vw;
+    bottom: 10.8vw;
+    text-align: right;
+    z-index: 2; 
+    width: auto;
+
+    /*animación general*/
+    animation: aparecerDesdeAbajo 1.4s ease-out both;
 }
