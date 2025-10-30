@@ -235,6 +235,7 @@ footer {
 
 .texto-sobre-mi {
     width: 45%;
+    line-height: 1.5;
 }
 
 h3 {
@@ -551,6 +552,37 @@ p {
     transform: rotate(0deg);
 }
 
+.contenido-sobre-mi3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.texto-sobre-mi5 {
+    width: 42%;
+    line-height: 1.5;
+}
+.texto-sobre-mi5 h4 {
+    color: #DF2451;
+}
+
+video {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.videito {
+    display: flex;
+    justify-content: center;
+    gap: 164px;
+    margin-top: 70px;
+}
+
+
 /*aca inicia la pestaña de contacto*/
 
 .portada-texto4 {
@@ -584,6 +616,7 @@ p {
     color: #202020;
     width: 646px;
     font-weight: 600;
+    line-height: 1.5;
 }
 
 .vector {
