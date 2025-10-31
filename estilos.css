@@ -54,7 +54,7 @@ nav  ul a {
     color: #5DD62C;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.1rem;
     display: block;
     padding: 10px 10px;
     border: 2px;
@@ -101,7 +101,7 @@ h2 {
 
 h1 {
     font-family: "Tieldsa";
-    font-size: 240px;
+    font-size: 15rem;
     font-weight: normal;
     color: #5DD62C;
     margin: 0;
@@ -119,7 +119,7 @@ h1 {
 
 .fecha {
     font-family: "Mansalva", sans-serif;
-    font-size:270px;
+    font-size:16rem;
     color: #DF2451;
     margin-top: -300px;
     margin-bottom: 0;
@@ -143,7 +143,6 @@ footer {
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
@@ -157,7 +156,6 @@ footer {
 
 .portada img {
     margin-top: 20px;
-    max-width: 100%;
     width: 100%;
     display: block;
 }
@@ -308,7 +306,7 @@ h3 {
 }
 
 .mi-imagen img {
-    width: 820px;
+    width: 880px;
     height: auto;
 }
 
@@ -316,14 +314,13 @@ h3 {
 .cuadros-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
-    padding: 60px 90px;
+    padding: 70px 90px;
 }
 
 .cuadro {
     width: 48%;
-    margin-top: 40px;
     box-sizing: border-box;
     border: 2px solid #DF2451;
     padding: 30px;
@@ -347,11 +344,11 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 10px;
 }
 
 /*animaciones para los iconos de adobe*/
 .iconos img {
+    width: 184px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -424,7 +421,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 384px;
     text-align: center;
 }
 
@@ -492,10 +488,21 @@ p {
 }
 
 /*aca inicia la pestaña de galeria*/
+.portada-texto3 {
+    position: absolute;
+    right: 5vw;
+    bottom: 10.8vw;
+    text-align: right;
+    z-index: 2; 
+    width: auto;
+
+    /*animación general*/
+    animation: aparecerDesdeAbajo 1.4s ease-out both;
+    }
+
 
 .contenedor {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 32px;
     width: 100%;
@@ -618,7 +625,6 @@ p {
 .contenido-sobre-mi3 {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     margin-top: 80px;
 }
@@ -808,27 +814,27 @@ form textarea {
   transform: scale(1.2);
 }
 
-/*media para pantallas más chicas*/
+/*MEDIA MOBILE INDEX*/
+@media screen and (min-width: 425px) {
+
+    h1 {
+        font-size: 14rem;
+    }
+    .fecha {
+        font-size: 14rem; 
+    }
+}
+
+/*MEDIA PANTALLA MAS CHICA UNA IMAGEN EN CONTACTO*/
 @media (max-width: 1366px) {
-  .vector {
-    width: 440px;
-    top: 0px;
-    right: 0; 
-    opacity: 0.9;
-  }
-  .fondo-verde {
-    position: relative;
-}
-}
+.vector {
+        width: 440px;
+        top: 0px;
+        right: 0;
+        opacity: 0.9;
+    }
 
-.portada-texto3 {
-    position: absolute;
-    right: 5vw;
-    bottom: 10.8vw;
-    text-align: right;
-    z-index: 2; 
-    width: auto;
-
-    /*animación general*/
-    animation: aparecerDesdeAbajo 1.4s ease-out both;
+    .fondo-verde {
+        position: relative;
+    }
 }
